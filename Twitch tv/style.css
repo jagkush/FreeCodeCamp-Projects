@@ -1,0 +1,59 @@
+#home{
+	border: 2px solid green;
+	margin:20%;
+	}
+
+.top{
+	background-color: #17a2b8;
+}
+
+p{
+	display: inline-block;
+}
+
+div.top {
+    display: table;
+    width: 100%;
+    table-layout: fixed;    /* For cells of equal size */
+}
+div.top h4 {
+    display: table-cell;
+    text-align: center;
+}
+
+div.user {
+    display: table;
+    width: 100%;
+    table-layout: fixed;    /* For cells of equal size */
+    background-color: gray;
+    color: #fff;
+}
+
+div.user p {
+    display: table-cell;
+    text-align: center;
+}
+
+
+.list-group-item a {
+  color: #333;
+}
+
+.list-group-item h3 {
+  margin: 5px 0px;
+}
+
+.list-group-item {
+  border-top: 1px solid #ffd0f0;
+  min-height: 90px;
+  margin-top: 5px;
+}
+
+.list-group-item.online {
+  border-top: 1px solid #aafaac;
+}
+
+.channel-logo {
+  height: 50px;
+  margin: 10px 0px 0px 0px;
+}

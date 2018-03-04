@@ -1,0 +1,31 @@
+.main{
+  margin-top:10%;
+  margin-left:23%;
+}
+#search{
+  margin-left:30%;
+  margin-top:3%;
+  position:relative;
+  top:-70px; left:80px;
+}
+.search_field{
+  width:440px;
+  box-shadow: 0px 5px 10px 5px gray;
+  color: gray;
+  font-weight: bold;
+}
+.submit{
+	margin-left: 5px;
+}
+
+.resultPage{
+	border: 2px solid gray;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding:10px;
+	box-shadow: 0px 2px 2px 2px gray;
+}
+
+.resultPage h4{
+	color:gray;
+}

@@ -1,0 +1,57 @@
+html{
+	border-width: 2px;
+}
+
+body {
+  background-color: #333;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
+}
+
+div.screen{
+border: 2px solid green;
+border-radius: 10px;
+box-shadow: 5px 5px 0 0 green;
+display: block;
+margin-left: 20%;
+margin-right: 20%;
+margin-top: 5%;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+
+h1{
+	font-family: "sans-serif, helvetica, seriff";
+	font-weight: bold;
+	color: green;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#quoteDisplay{
+	color: #0fe;
+	text-align: center;
+	font-size: 24px;
+	margin-left: 22%;
+	margin-right: 32%;
+	width:450px;
+	height: 200px;
+    display: table;
+}
+
+.tweet-quote {
+	background-color: #0cf;
+	font-size: 26px;
+}
+
+button{
+text-align: center;
+color:green;
+font-size: 24px;
+font-weight: bold;
+margin-top: 2%;
+margin-left: 43%;
+box-shadow: 4px 4px 0 0 green;
+}

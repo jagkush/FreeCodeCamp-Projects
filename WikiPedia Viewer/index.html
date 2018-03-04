@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, init-scale=1">
+
+	<title>WikiPedia Viewer</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--boostrap-->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+	<!-- jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="main">
+			<a href = "https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button class="random btn btn-secondary">Random Search</button></a>
+			<button class="search_button btn btn-secondary">Click here to Search Wiki</button>
+		</div>
+
+		<div id="search">
+			
+				<input type="search" name="" placeholder="Enter your text" class="search_field" onkeydown="remove()">
+				<input type="submit" name="search" value="GO" class="submit btn btn-secondary">
+		
+		</div>
+	
+		<div id="result_page"> 
+			
+		</div>
+		
+		</div>
+	
+<!--jquery-->
+<script src="jquery.js"></script>
+
+</body>
+</html>

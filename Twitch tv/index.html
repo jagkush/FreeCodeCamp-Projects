@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+	<!-- jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-route.min.js"></script>
+	<script src="https://npmcdn.com/gixi@0.0.6/dist/gixi-min.js"></script>
+</head>
+<body>
+
+	<div id="home" ng-app="twitchApp" ng-controller="twitchCtrl">
+		<div class="top">
+			<h4 class=" btn btn-info active" ng-click="resetFilter()">All</h4>
+			<h4 class="btn btn-info" ng-click="onlineFilter()">Online</h4>
+			<h4 class=" btn btn-info" ng-click="offlineFilter()">Offline</h4>
+		</div>
+			
+		<div class="user">
+			<p>User</p>
+			<p>Activities</p>			
+		</div>
+			
+		<div>
+			<ul class="list-group">
+          <li ng-if="filter === undefined || filter === channel.stream.isLive" ng-class="{online: channel.stream.isLive === true}" class="list-group-item" ng-repeat="channel in channels">
+            <a ng-href="{{channel.url}}" target="_blank">
+          <div class="row">
+            <div class="col-xs-2">
+          <img class="img-rounded channel-logo	" src="{{channel.logo}}" />
+		</div>
+
+		<div class="text-wrapper text-left col-xs-10">
+                  <small class="label label-success pull-right" ng-if="channel.stream.isLive">online</small>
+                  <small class="label label-danger pull-right" ng-if="channel.stream.isLive !== true">offline</small>
+                <h3 class="text-left">{{channel.title}}</h3>
+               
+                <label ng-class="{'label-danger': channel.closed , description: !channel.closed}" class="label">{{channel.status}}</label>
+                <span class="label label-primary">{{channel.stream.game}}</span>
+              </div>
+            </div>
+            </a>
+          </li>
+      </ul>
+  </div>
+	</div>
+<script src="js/main.js"></script>
+</body>
+</html>
