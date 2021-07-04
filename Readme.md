@@ -1,1 +1,1 @@
-****This folder contains all front-end web development project on freeCodeCamp*****
+****This folder contains front-end web development project on freeCodeCamp*****
